@@ -75,7 +75,8 @@ class MartorWidget(forms.Textarea):
                 "plugins/css/ace.min.css",
                 "plugins/css/resizable.min.css",
                 "martor/css/martor.%s.min.css" % selected_theme,
-                "martor/css/martor-admin.min.css",
+                # removed due to django admin css conflict. See https://github.com/agusmakmun/django-markdown-editor/issues/185
+                # "martor/css/martor-admin.min.css",
             )
         }
         js = (
